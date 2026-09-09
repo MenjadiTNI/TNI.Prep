@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan & Langkah Menjadi TNI</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container & Page System */
+        .page {
+            display: none;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Header & Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1579912437766-78929e7104d4?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        /* Buttons */
+        .btn {
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #1b5e20;
+        }
+
+        .btn-secondary {
+            background-color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Content Styling */
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 5px solid #2e7d32;
+        }
+
+        .card h2 {
+            color: #1b5e20;
+            margin-bottom: 15px;
+        }
+
+        .matra-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .matra-box {
+            flex: 1;
+            min-width: 200px;
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .matra-box h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Quiz Styling */
+        .quiz-option {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .quiz-option:hover {
+            background: #e0e0e0;
+        }
+
+        #quiz-result {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HALAMAN 1: Landing Page / Pengenalan -->
+    <div id="page1" class="page active">
+        <div class="hero">
+            <h1>LANGKAH MENJADI TNI</h1>
+            <p>Selamat datang di portal informasi resmi persiapannya prajurit Tentara Nasional Indonesia. Temukan informasi lengkap mengenai matra, persyaratan, tahap seleksi, hingga kuis kesiapan kamu di sini!</p>
+            <button class="btn" onclick="showPage('page2')">Mulai Pelajari Langkahnya &rarr;</button>
+        </div>
+    </div>
+
+    <!-- HALAMAN 2: Isi Lengkap & Quiz -->
+    <div id="page2" class="page">
+        <button class="btn btn-secondary" onclick="showPage('page1')">&larr; Kembali ke Beranda</button>
+
+        <!-- Section 1: Pilihan Matra -->
+        <div class="card">
+            <h2>1. Pilihan Matra TNI</h2>
+            <p>TNI terbagi menjadi 3 matra utama, yaitu:</p>
+            <br>
+            <div class="matra-container">
+                <div class="matra-box">
+                    <h3>TNI AD</h3>
+                    <p><strong>Angkatan Darat</strong></p>
+                    <p>Fokus pada pertahanan wilayah daratan Indonesia.</p>
+                </div>
+                <div class="matra-box">
+                    <h3>TNI AL</h3>
+                    <p><strong>Angkatan Laut</strong></p>
+                    <p>Fokus pada pertahanan wilayah perairan/laut Indonesia.</p>
+                </div>
+                <div class="matra-box">
+                    <h3>TNI AU</h3>
+                    <p><strong>Angkatan Udara</strong></p>
+                    <p>Fokus pada pertahanan wilayah udara Indonesia.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Persyaratan Umum -->
+        <div class="card">
+            <h2>2. Persyaratan Umum</h2>
+            <ul>
+                <li>Warga Negara Indonesia (WNI), Pria/Wanita.</li>
+                <li>Beriman dan bertaqwa kepada Tuhan Yang Maha Esa.</li>
+                <li>Setia kepada NKRI yang berdasarkan Pancasila dan UUD 1945.</li>
+                <li>Usia minimal 17 tahun 9 bulan dan maksimal 22 tahun saat pembukaan pendidikan.</li>
+                <li>Tidak memiliki catatan kriminalitas (SKCK).</li>
+                <li>Sehat jasmani, rohani, dan tidak berkacamata.</li>
+                <li>Tinggi badan minimal Pria 163 cm & Wanita 157 cm (variatif tergantung jalur/matra).</li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Tahapan Seleksi -->
+        <div class="card">
+            <h2>3. Tahapan Seleksi</h2>
+            <ol>
+                <li><strong>Pendaftaran Online & Verifikasi Fisik:</strong> Mengisi data diri dan penyerahan berkas dokumen.</li>
+                <li><strong>Pemeriksaan Administrasi:</strong> Keabsahan ijazah, akta, KTP, dan surat izin orang tua.</li>
+                <li><strong>Tes Kesehatan I & II:</strong> Pemeriksaan fisik luar, dalam, laboratorium, dan darah.</li>
+                <li><strong>Tes Kesamaptaan Jasmani:</strong> Lari 12 menit, pull-up, sit-up, push-up, shuttle run, dan berenang.</li>
+                <li><strong>Tes Psikologi & Mental Ideologi (MI):</strong> Menguji kepribadian dan loyalitas terhadap NKRI.</li>
+                <li><strong>Tes Akademik:</strong> Pengetahuan umum, Bahasa Indonesia, Matematika, dan Bahasa Inggris.</li>
+                <li><strong>Pantukhir (Panitia Penentuan Akhir):</strong> Tahap penentuan sidang lulus/tidaknya calon prajurit.</li>
+            </ol>
+        </div>
+
+        <!-- Section 4: Tips Tambahan -->
+        <div class="card">
+            <h2>4. Tips & Persiapan Penting</h2>
+            <ul>
+                <li><strong>Fisik:</strong> Latihan olahraga rutin minimal 6 bulan sebelum pendaftaran.</li>
+                <li><strong>Kesehatan:</strong> Lakukan *medical check-up* mandiri lebih awal untuk mengetahui jika ada penyakit yang perlu diobati.</li>
+                <li><strong>Bebas Biaya:</strong> Ingat! Seluruh proses pendaftaran dan seleksi TNI adalah <strong>GRATIS / Tidak Dipungut Biaya</strong>. Hati-hati terhadap oknum penipuan!</li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Quiz Kesiapan -->
+        <div class="card" style="border-left-color: #d32f2f;">
+            <h2>5. Uji Pengetahuan (Mini Quiz)</h2>
+            <p><strong>Pertanyaan:</strong> Berapa lama durasi standar untuk tes lari pada kesamaptaan jasmani TNI?</p>
+            <div id="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(false)">A. 10 Menit</button>
+                <button class="quiz-option" onclick="checkAnswer(true)">B. 12 Menit</button>
+                <button class="quiz-option" onclick="checkAnswer(false)">C. 15 Menit</button>
+                <button class="quiz-option" onclick="checkAnswer(false)">D. 20 Menit</button>
+            </div>
+            <div id="quiz-result"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Panduan Menjadi TNI - Website Edukasi Informasi Penerimaan TNI</p>
+    </footer>
+
+    <!-- JavaScript untuk Navigasi Halaman dan Quiz -->
+    <script>
+        // Fungsi Navigasi Halaman
+        function showPage(pageId) {
+            // Sembunyikan semua page
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            // Tampilkan page yang dipilih
+            document.getElementById(pageId).classList.add('active');
+            // Scroll ke atas halaman
+            window.scrollTo(0, 0);
+        }
+
+        // Fungsi Kuis sederhanan
+        function checkAnswer(isCorrect) {
+            const resultDiv = document.getElementById('quiz-result');
+            if (isCorrect) {
+                resultDiv.innerHTML = "<span style='color: green;'>✅ Jawaban Benar! Tes lari kesamaptaan jasmani dilakukan selama 12 menit.</span>";
+            } else {
+                resultDiv.innerHTML = "<span style='color: red;'>❌ Jawaban Salah. Coba lagi! Hint: Cek kembali poin Tahapan Seleksi.</span>";
+            }
+        }
+    </script>
+</body>
+</html>
